@@ -19,7 +19,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Live Site URL: [https://stinkycodemachine.github.io/qr-code-component-main/](https://stinkycodemachine.github.io/qr-code-component-main/)
+- Live Site URL: [https://stinkycodemachine.github.io/product-preview-card-component-main/](https://stinkycodemachine.github.io/product-preview-card-component-main//)
 
 
 ## My process
