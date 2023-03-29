@@ -5,41 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Fraunces">
   
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body {
-      background-color: ;
+      background-color: hsl(30, 38%, 92%);
     }
 
-    .attribution {
-       font-size: 11px; 
-       text-align: center; 
+    .container {
+      display:flex;
+      
+      border-radius: 7px;
+      width: 600px;
+      margin: 100px auto;
+      background-color: hsl(0, 0%, 100%);
+      
+    }
+
+    img {
+      border-radius: 7px 0 0 7px;
+      width: 100%;
+      flex-basis: 300px;
+    }
+
+    .container div {
+      min-width: 0;
+      padding: 20px;
+      flex-basis: 300px;
+
+    }
+
+    .perfume {
+      font-family: Montserrat;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.25rem;
+      color: hsl(228, 12%, 48%);
+    }
+
+    h1 {
+      font-family: Fraunces;
+      color: hsl(212, 21%, 14%);
+      font-weight: 700;
+    }
+
+    p {
+      font-family: Montserrat;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .new-price {
+      font-family: Fraunces;
+      color: hsl(158, 36%, 37%);
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    .old-price {
+      font-family: Montserrat;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+      font-size: 0.8rem;
+      text-decoration: line-through;
+      margin-left: 1rem;
+      position: relative;
+      top: -5px;
+    }
+
+    button {
+      display: block;
+      margin: 20px 0;
+      padding: 20px;
+      width: 100%;
+      border-radius: 10px;
+      background-color: hsl(158, 36%, 37%);
+      font-family: Montserrat;
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+      background-image: url(images/icon-cart.svg);
+      background-repeat:no-repeat;
+      background-position: 30%;
+
+
+    }
+
+    button:active {
+      filter:brightness(80%);
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: 90vw;
+        flex-direction: column;
+        margin: 20px auto;
       }
-    .attribution a { 
-      color: hsl(228, 45%, 44%); 
+
+      img {
+        height: 20%;
+        border-radius: 7px 7px 0 0;
+      }
+
+      .perfume {
+      font-size: 0.6rem;
+     }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .new-price {
+        font-size: 1.8rem;
+      }
+
+      .old-price {
+        font-size: 0.6rem;
+      }
+
+      button {
+        display: block;
+        margin: 14px 0;
+        padding: 14px;
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .container div {
+      padding: 12px;
+
+    }
+
+
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <img src="images/image-product-desktop.jpg" alt="">
 
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div>
+      <span class="perfume">Perfume</span>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+      Perfumer-Creator for the House of CHANEL.</p>
+      <span class="new-price">$149.99</span>
+      <span class="old-price">$169.99</span>
+      <button>Add to Cart</button>
+    </div>
   </div>
 </body>
 </html>
