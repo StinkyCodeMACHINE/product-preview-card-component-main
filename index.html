@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Fraunces">
   
@@ -13,6 +18,10 @@
   <style>
     body {
       background-color: hsl(30, 38%, 92%);
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+
     }
 
     .container {
@@ -20,7 +29,6 @@
       
       border-radius: 7px;
       width: 600px;
-      margin: 100px auto;
       background-color: hsl(0, 0%, 100%);
       
     }
@@ -102,7 +110,6 @@
       .container {
         width: 90vw;
         flex-direction: column;
-        margin: 20px auto;
       }
 
       img {
@@ -148,8 +155,8 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="images/image-product-desktop.jpg" alt="">
+  <main class="container">
+    <img src="images/image-product-desktop.jpg" alt="CHANEL perfume">
 
     <div>
       <span class="perfume">Perfume</span>
@@ -160,6 +167,6 @@
       <span class="old-price">$169.99</span>
       <button>Add to Cart</button>
     </div>
-  </div>
+  </main>
 </body>
 </html>
